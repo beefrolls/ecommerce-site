@@ -12,11 +12,13 @@ button1.addEventListener('click', function() {
     if (counter == 1) {
         image1.style.display = 'none';
         image2.style.display = 'flex';
-        button1.disabled = false;
     } else if (counter == 2) {
         image2.style.display = 'none'
         image3.style.display = 'flex';
-        button1.disabled = true;
+    } else if (counter == 3) {
+        image3.style.display = 'none';
+        image1.style.display = 'flex';
+        counter = 0;
     }
 })
 
@@ -26,14 +28,14 @@ button2.addEventListener('click', function() {
     if (counter == 1) {
         image1.style.display = 'none';
         image2.style.display = 'flex';
-        button1.disabled = false;
     } else if (counter == 2) {
         image2.style.display = 'none';
         image3.style.display = 'flex';
-        button1.disabled = false;
     } else if (counter == 0) {
         image1.style.display = 'flex';
         image2.style.display = 'none';
-        button2.disabled = true;
+    } else if (counter == -1) {
+        image1.style.display = 'none';
+        image3.style.display = 'flex';
     }
 })

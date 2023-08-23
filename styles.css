@@ -16,7 +16,7 @@ body > * {
 .panel-1 {
     display: flex;
     flex-wrap: wrap;
-    background-color: pink;
+    background-color: grey;
 }
 
 .panel-1 > * {
@@ -50,8 +50,68 @@ body > * {
 .slideshow {
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 img {
     width: 300px;
+}
+
+.panel-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.panel-2 > * {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper {
+    flex-wrap: wrap;
+}
+
+.upper > *,
+.lower > * {
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower {
+    flex-wrap: wrap;
+}
+
+.lower > .body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+    grid-template-rows: 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 10px
+}
+
+.box {
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box > * {
+    flex: 1 1 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.info > ul {
+    list-style-type: none;
+    padding: 0;
 }
