@@ -24,6 +24,7 @@ body {
 }
 
 
+
 .panel-1 {
     display: grid;
     grid-template-rows: 80px max-content;
@@ -183,6 +184,7 @@ body {
 
 .more {
     display: flex;
+    height: max-content;
     justify-content: center;
     align-items: flex-start;
 }
